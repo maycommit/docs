@@ -7,9 +7,9 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#0074D9",
+    "light": "#0074D9",
+    "dark": "#0074D9",
     "anchors": {
       "from": "#0D9373",
       "to": "#07C983"
@@ -23,16 +23,12 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.neospace.ai/"
   },
   "tabs": [
     {
       "name": "Neocore",
       "url": "neocore"
-    },
-    {
-      "name": "API Reference",
-      "url": "api-reference"
     }
   ],
   "navigation": [
@@ -48,20 +44,6 @@
       "group": "CLI Reference",
       "pages": [
         "neocore/cli-reference/cluster"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
       ]
     }
   ],

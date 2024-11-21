@@ -1,0 +1,138 @@
+---
+title: CLI Cheat Sheet
+description: Quick reference for Neocore CLI commands.
+---
+
+# Neocore CLI Cheat Sheet
+
+This cheat sheet provides a quick reference to Neocore CLI commands, helping you manage clusters, orchestrate workflows, and interact with the SaaS platform. Use this guide to streamline your Neocore operations.
+
+---
+
+## Quickstart
+
+| Command             | Description                                                                                             |
+|---------------------|---------------------------------------------------------------------------------------------------------|
+| `neo start`         | Start a single operator on the same machine as the CLI installation and create a simple cluster.       |
+
+---
+
+## CLI Management
+
+| Command             | Description                           |
+|---------------------|---------------------------------------|
+| `neo update`        | Update the Neocore CLI to the latest version. |
+
+---
+
+## Monitoring
+
+| Command             | Description                           |
+|---------------------|---------------------------------------|
+| `neo top`           | Similar to `nvtop`, view GPU metrics. |
+
+---
+
+## Cluster Management
+
+| Command                        | Description                                                    |
+|--------------------------------|----------------------------------------------------------------|
+| `neo cluster reconcile`        | Ensure the cluster matches the desired state.                 |
+| `neo cluster stop`             | Temporarily stop a cluster while preserving its configuration. |
+| `neo cluster destroy`          | Safely destroy a cluster and free its resources.              |
+| `neo cluster logs <node>`      | View logs for a specific node in the cluster.                 |
+
+---
+
+## Resource Orchestration
+
+| Command                        | Description                                                    |
+|--------------------------------|----------------------------------------------------------------|
+| `neo resource status`          | Display the current resource allocation.                      |
+| `neo resource allocate <gpu>`  | Allocate GPUs or other resources to a task.                   |
+| `neo resource release <gpu>`   | Release resources from a task or workflow.                   |
+
+---
+
+## Actions
+
+| Command                        | Description                                                    |
+|--------------------------------|----------------------------------------------------------------|
+| `neo action list`              | List available actions in the marketplace.                    |
+| `neo action run <action>`      | Run a specific action.                                         |
+| `neo action status <id>`       | Check the status of a running action.                         |
+| `neo action logs <id>`         | View logs for a specific action.                              |
+
+---
+
+## Workflow Orchestration
+
+| Command                        | Description                                                    |
+|--------------------------------|----------------------------------------------------------------|
+| `neo workflow apply <file>`    | Create a workflow using a definition file.                    |
+| `neo workflow start <id>`      | Start a workflow by its ID.                                   |
+| `neo workflow status <id>`     | Check the status of a running workflow.                      |
+| `neo workflow logs <id>`       | View logs for a specific workflow.                           |
+| `neo workflow list`            | List all workflows in the system.                            |
+
+---
+
+## Devspace Management
+
+| Command                        | Description                                                    |
+|--------------------------------|----------------------------------------------------------------|
+| `neo devspace start`           | Create a devspace on a specified node.                        |
+| `neo devspace list`            | List all active devspaces.                                    |
+| `neo devspace destroy`         | Delete a devspace by its ID.                                  |
+| `neo devspace connect`         | Connect to a devspace via CLI.                                |
+
+---
+
+## Model Inference Management
+
+| Command                             | Description                                                    |
+|-------------------------------------|----------------------------------------------------------------|
+| `neo inference deploy <model>`      | Deploy an inference server for a specific model (e.g., Hugging Face or Neolang). |
+| `neo inference list`                | List all active inference servers.                           |
+| `neo inference start <id>`          | Start an inference server by its ID.                         |
+| `neo inference stop <id>`           | Stop an inference server by its ID.                          |
+| `neo inference status <id>`         | Check the status of an inference server.                     |
+| `neo inference logs <id>`           | View logs for a specific inference server.                   |
+
+---
+
+## SaaS Integration
+
+| Command             | Description                                                    |
+|---------------------|----------------------------------------------------------------|
+| `neo connect`       | Initiate connection with the SaaS platform.                   |
+| `neo login`         | Log in to the SaaS platform for full access.                  |
+| `neo status`        | Check the SaaS connection status.                             |
+| `neo disconnect`    | Disconnect from the SaaS platform.                            |
+
+---
+
+## General Commands
+
+| Command             | Description                                                    |
+|---------------------|----------------------------------------------------------------|
+| `neo version`       | Display the current version of Neocore.                       |
+| `neo help`          | Show help information for CLI commands.                       |
+
+---
+
+## Example Workflows
+
+### Create and Run a Workflow
+```bash
+# Apply a workflow definition from a YAML file
+neo workflow apply workflow.yaml
+
+# Start the workflow
+neo workflow start 1234
+
+# Check the status of the workflow
+neo workflow status 1234
+
+# View workflow logs
+neo workflow logs 1234

@@ -1,0 +1,76 @@
+---
+title: Installation
+description: Install the Neocore CLI on Linux, Windows, and macOS.
+---
+
+# Neocore CLI Installation Guide
+
+Welcome to the Neocore CLI installation guide! This document will help you set up the `neo` CLI tool, which is your gateway to managing clusters, orchestrating workflows, and deploying inference servers. The CLI is built using Golang and is installed in `$HOME/.neospace`.
+
+---
+
+## Prerequisites
+
+Before starting, ensure the following:
+
+- **Operating System**: Linux, Windows 10/11, or macOS 11+.
+- **Administrative Permissions**: Required to update system configurations.
+- **Internet Access**: Needed to download the installation script.
+
+---
+
+## Installation Instructions
+
+### Linux and MacOS
+
+1. **Run the Installation Script**:
+   Open your terminal and execute:
+   ```bash
+   curl -s https://example.com/install-neocore.sh | bash
+
+2. **Update environment variables**:
+   Add the following line to your shell profile (`~/.bashrc`, `~/.zshrc`, `~/.profile`, etc.):
+   ```bash
+   export PATH=$PATH:$HOME/.neospace
+   ```
+
+3. **Load the New Configuration**:
+   Run the following command to apply the changes:
+   ```bash
+   source ~/.bashrc
+   ```
+
+---
+
+## Updating the CLI
+
+To update the Neocore CLI to the latest version, run the following command:
+
+```bash
+neo update
+```
+
+This will download and install the latest version of the CLI.
+
+---
+
+## Uninstalling the CLI
+
+If you need to uninstall the Neocore CLI, follow these steps:
+
+### Linux and MacOS
+
+1. **Remove the CLI**:
+   Delete the Neocore CLI binary:
+   ```bash
+   rm -rf $HOME/.neospace
+   ```
+
+2. **Remove the Environment Variable**:
+   Edit your shell profile (`~/.bashrc`, `~/.zshrc`, `~/.profile`, etc.) and remove the line that adds Neocore to your PATH.
+
+3. **Reload the Configuration**:
+   Run the following command to apply the changes:
+   ```bash
+   source ~/.bashrc
+   ```

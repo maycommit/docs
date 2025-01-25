@@ -1,115 +1,164 @@
 ---
-title: Overview
-description: Introduction to Neocore - A Platform for Orchestrating Node Resources, Actions, Workflows, and Devspaces with SaaS Integration.
+title: "Overview"
+description: "Introduction to Neocore - A Platform for Orchestrating Node Resources, Actions, Workflows, and Devspaces with SaaS Integration."
 ---
 
 # Neocore Documentation
 
 Welcome to the **Neocore** documentation! Neocore is a cutting-edge platform focused on orchestrating node resources, particularly GPUs, to efficiently run actions, workflows, and devspaces. This documentation will guide you through the platform's features, functionality, and integration with our SaaS platform.
 
----
+***
 
 ## What is Neocore?
 
 Neocore is a resource orchestration platform designed to streamline the utilization of cluster resources, with a primary focus on GPUs. It enables users to manage clusters, run computational actions, orchestrate workflows, and create tailored environments (devspaces) for specific tasks. With a CLI interface and SaaS integration, Neocore provides a powerful yet flexible solution for resource-intensive operations.
 
 ### **SaaS Integration**
+
 Neocore connects seamlessly with our SaaS platform to unlock additional capabilities. After initiating the connection via CLI, users must log in to the SaaS platform through the CLI to access features like advanced orchestration, centralized management, and analytics.
 
----
+***
 
 ## Key Features
 
 ### 1. **Node Resource Orchestration**
+
 At its core, Neocore focuses on efficiently orchestrating resources across nodes, including:
-- **GPU Management**: Allocate GPUs dynamically to optimize task execution.
-- **Resource Sharing**: Enable multiple workflows to leverage available resources without conflicts.
-- **Monitoring and Logs**: Access detailed metrics and logs for resource usage on all nodes.
+
+* **GPU Management**: Allocate GPUs dynamically to optimize task execution.
+
+* **Resource Sharing**: Enable multiple workflows to leverage available resources without conflicts.
+
+* **Monitoring and Logs**: Access detailed metrics and logs for resource usage on all nodes.
 
 ### 2. **Cluster Management**
+
 Neocore provides robust tools for managing IA clusters, ensuring seamless operation. Key functionalities include:
-- **Reconcile**: Automatically ensure clusters maintain their desired state.
-- **Destroy**: Safely tear down clusters when they're no longer needed.
-- **Stop**: Temporarily pause clusters while preserving their configurations.
-- **Node Logs**: Access and analyze logs to monitor resource and node activity.
+
+* **Reconcile**: Automatically ensure clusters maintain their desired state.
+
+* **Destroy**: Safely tear down clusters when they're no longer needed.
+
+* **Stop**: Temporarily pause clusters while preserving their configurations.
+
+* **Node Logs**: Access and analyze logs to monitor resource and node activity.
 
 ### 3. **Action: Modular Building Blocks**
+
 Actions are self-contained tasks designed to harness node resources, especially GPUs. Features include:
-- A marketplace of predefined actions, similar to GitHub Actions.
-- Customization options to adapt actions to specific workloads.
-- Resource-aware execution, optimizing GPU and other node usage.
+
+* A marketplace of predefined actions, similar to GitHub Actions.
+
+* Customization options to adapt actions to specific workloads.
+
+* Resource-aware execution, optimizing GPU and other node usage.
 
 ### 4. **Workflow Orchestration**
+
 Neocore workflows enable seamless orchestration of multiple actions, offering:
-- Support for parallel or sequential execution.
-- Intuitive CLI-based definitions for complex workflows.
-- Efficient scheduling to maximize GPU utilization.
+
+* Support for parallel or sequential execution.
+
+* Intuitive CLI-based definitions for complex workflows.
+
+* Efficient scheduling to maximize GPU utilization.
 
 ### 5. **Devspace Environments**
+
 A **Devspace** is a user-specific environment created on a node, designed for development or testing. Features include:
-- On-demand provisioning of resources, including GPUs.
-- Isolation from other workloads for focused tasks.
-- Integration with cluster and SaaS tools for enhanced productivity.
+
+* On-demand provisioning of resources, including GPUs.
+
+* Isolation from other workloads for focused tasks.
+
+* Integration with cluster and SaaS tools for enhanced productivity.
 
 ### 6. **Model Inference Management**
+
 Neocore simplifies deploying and managing inference servers for machine learning models. Supported inference frameworks include:
-- **Hugging Face Models**: Deploy pre-trained models directly from Hugging Face.
-- **Neolang**: Use our proprietary model inference system for high-performance deployments.
+
+* **Hugging Face Models**: Deploy pre-trained models directly from Hugging Face.
+
+* **Neolang**: Use our proprietary model inference system for high-performance deployments.
 
 Capabilities include:
-- Deploying, starting, and stopping inference servers.
-- Monitoring model performance and resource utilization.
 
----
+* Deploying, starting, and stopping inference servers.
+
+* Monitoring model performance and resource utilization.
+
+***
 
 ## SaaS Connection Workflow
 
 Neocore's integration with our SaaS platform adds significant value to resource orchestration. The workflow includes:
 
 1. **Initiate SaaS Connection**: Use the CLI to start the connection process.
-2. **Login**: Authenticate with the SaaS platform via CLI to unlock full functionality.
-3. **Leverage SaaS Features**:
-   - Centralized resource and workflow management.
-   - Advanced analytics for GPU and node utilization.
-   - Enhanced orchestration across distributed clusters.
 
----
+2. **Login**: Authenticate with the SaaS platform via CLI to unlock full functionality.
+
+3. **Leverage SaaS Features**:
+
+   * Centralized resource and workflow management.
+
+   * Advanced analytics for GPU and node utilization.
+
+   * Enhanced orchestration across distributed clusters.
+
+***
 
 ## How Neocore Works
 
 Neocore operates as an operator running on every node within your cluster. This decentralized architecture ensures high availability and efficient resource utilization across all nodes.
 
 ### **CLI-Driven Management**
-The CLI provides comprehensive control over Neocore, allowing users to:
-- Manage node resources, clusters, workflows, and devspaces.
-- Allocate GPUs dynamically to actions and workflows.
-- Monitor resource usage and logs in real time.
-- Connect to the SaaS platform for extended capabilities.
 
----
+The CLI provides comprehensive control over Neocore, allowing users to:
+
+* Manage node resources, clusters, workflows, and devspaces.
+
+* Allocate GPUs dynamically to actions and workflows.
+
+* Monitor resource usage and logs in real time.
+
+* Connect to the SaaS platform for extended capabilities.
+
+***
 
 ## Why Choose Neocore?
 
 Neocore is purpose-built for teams that require advanced orchestration of computational resources, particularly GPUs. It offers:
-- Optimized resource allocation for maximum efficiency.
-- Scalable workflows for complex, resource-intensive tasks.
-- Simplified environment setup with devspaces.
-- Integration with a SaaS platform for enhanced orchestration and insights.
 
----
+* Optimized resource allocation for maximum efficiency.
+
+* Scalable workflows for complex, resource-intensive tasks.
+
+* Simplified environment setup with devspaces.
+
+* Integration with a SaaS platform for enhanced orchestration and insights.
+
+***
 
 ## Next Steps
 
-- [Getting Started](./getting-started.mdx): Learn how to install and configure Neocore.
-- [CLI Reference](./cli-reference.mdx): Explore the commands available in the Neocore CLI.
-- [Node Resource Management](./resource-management.mdx): Dive into GPU and resource orchestration.
-- [Cluster Management](./cluster-management.mdx): Manage IA clusters with ease.
-- [Actions Marketplace](./actions-marketplace.mdx): Discover and use predefined actions.
-- [Workflow Orchestration](./workflow-orchestration.mdx): Create and execute workflows.
-- [Devspace Environments](./devspace-environments.mdx): Set up and manage devspaces.
-- [Inference Management](./inference-management.mdx): Manage Hugging Face and Neolang inference servers.
-- [SaaS Integration](./saas-integration.mdx): Connect to the SaaS platform and leverage advanced features.
+* [Getting Started](./getting-started.mdx): Learn how to install and configure Neocore.
 
----
+* [CLI Reference](./cli-reference.mdx): Explore the commands available in the Neocore CLI.
+
+* [Node Resource Management](./resource-management.mdx): Dive into GPU and resource orchestration.
+
+* [Cluster Management](./cluster-management.mdx): Manage IA clusters with ease.
+
+* [Actions Marketplace](./actions-marketplace.mdx): Discover and use predefined actions.
+
+* [Workflow Orchestration](./workflow-orchestration.mdx): Create and execute workflows.
+
+* [Devspace Environments](./devspace-environments.mdx): Set up and manage devspaces.
+
+* [Inference Management](./inference-management.mdx): Manage Hugging Face and Neolang inference servers.
+
+* [SaaS Integration](./saas-integration.mdx): Connect to the SaaS platform and leverage advanced features.
+
+***
 
 Neocore simplifies the orchestration of GPUs and other node resources, empowering users to run actions, workflows, and devspaces efficiently. With SaaS integration, it combines powerful local resource management with centralized insights and control. Get started today!
